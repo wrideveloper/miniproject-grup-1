@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wrigroup1/pages/start_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      // home: HalamanKalian(),
+      home: const SplashScreen(),
     );
   }
 }
