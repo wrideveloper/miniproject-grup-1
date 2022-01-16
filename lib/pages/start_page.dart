@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+class StartPage extends StatelessWidget {
+  const StartPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,29 +21,34 @@ class SplashScreen extends StatelessWidget {
           const Text(
             'Let\'s improve your appearence',
             style: TextStyle(
-                fontFamily: "Arial",
-                fontWeight: FontWeight.normal,
-                fontSize: 35,
-                color: Colors.white,
-                decoration: TextDecoration.none),
+              fontFamily: "Arial",
+              fontWeight: FontWeight.normal,
+              fontSize: 35,
+              color: Colors.white,
+              decoration: TextDecoration.none,
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 15),
           const Text(
             'find cool shoes to support your daily activities',
             style: TextStyle(
-                fontFamily: "Arial",
-                fontSize: 15,
-                color: Colors.white,
-                fontWeight: FontWeight.normal,
-                decoration: TextDecoration.none),
+              fontFamily: "Arial",
+              fontSize: 15,
+              color: Colors.white,
+              fontWeight: FontWeight.normal,
+              decoration: TextDecoration.none,
+            ),
           ),
           const SizedBox(
             height: 50,
           ),
           GestureDetector(
             onTap: () {
-              //Widget dari home_page.dart
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(builder: (context) => Widget home_page()),
+              // );
             },
             child: Container(
               alignment: Alignment.center,
