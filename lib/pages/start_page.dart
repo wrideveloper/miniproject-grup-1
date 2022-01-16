@@ -55,16 +55,18 @@ class StartPage extends StatelessWidget {
               width: 220,
               height: 60,
               decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(20))),
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+              ),
               child: const Text(
                 'Get Started',
                 style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: "Arial",
-                    fontWeight: FontWeight.normal,
-                    fontSize: 25,
-                    decoration: TextDecoration.none),
+                  color: Colors.black,
+                  fontFamily: "Arial",
+                  fontWeight: FontWeight.normal,
+                  fontSize: 25,
+                  decoration: TextDecoration.none,
+                ),
               ),
             ),
           )
