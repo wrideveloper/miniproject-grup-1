@@ -32,33 +32,33 @@ class CategoryPage extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           children: const <Widget>[
             ShoesItem(
-                image: "sepatuBabyPink.png",
+                image: "assets/sepatuBabyPink.png",
                 price: "Rp. 129.900",
                 icon: Icons.favorite,
                 name: "Sepatu PVN Yujin"),
             ShoesItem(
-                image: "sepatuHijau.png",
+                image: "assets/sepatuHijau.png",
                 price: "Rp. 250.000",
                 icon: Icons.favorite,
                 name: "Sepatu PVN Dohyun"),
             ShoesItem(
-                image: "sepatuCream.png",
+                image: "assets/sepatuCream.png",
                 price: "Rp. 499.000",
                 icon: Icons.favorite,
                 name: "Sepatu AIRWALK"),
             ShoesItem(
-                image: "sepatu6.png",
+                image: "assets/sepatu6.png",
                 price: "Rp. 350.000",
                 icon: Icons.favorite,
                 name: "Sepatu PVN Yellow"),
             ShoesItem(
-              image: "sepatuPutih.png",
+              image: "assets/sepatuPutih.png",
               price: "Rp. 229.000",
               icon: Icons.favorite,
               name: "Sepatu PVN Soobin",
             ),
             ShoesItem(
-              image: "sepatuUngu.png",
+              image: "assets/sepatuUngu.png",
               price: "Rp. 159.000",
               icon: Icons.favorite,
               name: "Sepatu PVN Nayeon",
