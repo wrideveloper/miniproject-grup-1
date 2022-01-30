@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({Key? key}) : super(key: key);
+
+  final TextStyle baseStyle = const TextStyle(
+    fontWeight: FontWeight.normal,
+    color: Colors.white,
+    decoration: TextDecoration.none,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -17,32 +24,25 @@ class StartPage extends StatelessWidget {
             height: 500,
             fit: BoxFit.fill,
           ),
-          const SizedBox(height: 30),
-          const Text(
+          const Spacer(),
+          Text(
             'Let\'s improve your appearence',
-            style: TextStyle(
-              fontFamily: "Arial",
-              fontWeight: FontWeight.normal,
-              fontSize: 35,
-              color: Colors.white,
-              decoration: TextDecoration.none,
+            style: GoogleFonts.lato(
+              textStyle: baseStyle,
+              fontSize: 30,
             ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 15),
-          const Text(
+          Text(
             'find cool shoes to support your daily activities',
-            style: TextStyle(
-              fontFamily: "Arial",
+            style: GoogleFonts.lato(
+              textStyle: baseStyle,
               fontSize: 15,
-              color: Colors.white,
-              fontWeight: FontWeight.normal,
-              decoration: TextDecoration.none,
+              color: Colors.grey,
             ),
           ),
-          const SizedBox(
-            height: 50,
-          ),
+          const Spacer(),
           GestureDetector(
             onTap: () {
               // Navigator.push(
@@ -58,18 +58,18 @@ class StartPage extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(20)),
               ),
-              child: const Text(
+              child: Text(
                 'Get Started',
-                style: TextStyle(
+                style: GoogleFonts.lato(
+                  textStyle: baseStyle,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
                   color: Colors.black,
-                  fontFamily: "Arial",
-                  fontWeight: FontWeight.normal,
-                  fontSize: 25,
-                  decoration: TextDecoration.none,
                 ),
               ),
             ),
-          )
+          ),
+          const Spacer(),
         ],
       ),
     );
